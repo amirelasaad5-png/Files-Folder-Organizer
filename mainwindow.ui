@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Organize Files</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>520</width>
+    <height>300</height>
+   </size>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+
+    <!-- Path selection -->
+    <item>
+     <layout class="QHBoxLayout" name="pathLayout">
+      <item>
+       <widget class="QLineEdit" name="linePath">
+        <property name="placeholderText">
+         <string>اختر مسار المجلد...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBrowse">
+        <property name="text">
+         <string>📁 تصفح</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Start button -->
+    <item>
+     <widget class="QPushButton" name="btnStart">
+      <property name="minimumHeight">
+       <number>36</number>
+      </property>
+      <property name="text">
+       <string>▶ ابدأ التنظيم</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Pause + Theme -->
+    <item>
+     <layout class="QHBoxLayout" name="controlLayout">
+      <item>
+       <widget class="QPushButton" name="btnPause">
+        <property name="text">
+         <string>⏸ إيقاف مؤقت</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTheme">
+        <property name="text">
+         <string>🌙 Dark / Light</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Progress bar -->
+    <item>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Status -->
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string>الحالة: جاهز</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>
